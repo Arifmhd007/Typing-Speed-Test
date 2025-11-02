@@ -1,0 +1,1 @@
+The Typing Speed Test is an interactive and engaging application designed to measure and improve a user’s typing speed and accuracy. It works like a monkey typing test — displaying random or meaningful text that the user must type within a limited time. Once completed, it shows detailed results including correct words, incorrect words, accuracy, and typing speed
