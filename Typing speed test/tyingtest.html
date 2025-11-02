@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="typingtest.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div class="stats">
+            <p>Time: <span id="time">1</span>min</p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">100</span>%</p>
+        </div>
+
+        <div class="settings">
+            <label for="time-select">Set Time: </label>
+            <select id="time-select">
+                <option value="60">1min</option>
+                <option value="180" selected>3mins</option>
+                <option value="300">5mins</option>
+                <option value="600">10mins</option>
+            </select>
+        </div>
+
+        <div id="text-display" class="fade-in"></div>
+        <textarea id="text-input" placeholder="Start typing here..." disabled></textarea>
+
+        <div class="buttons">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn" disabled>Stop</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <div id="result-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <p><strong>Correct Letters:</strong> <span id="correct-letters">0</span></p>
+            <p><strong>Incorrect Letters:</strong> <span id="incorrect-letters">0</span></p>
+            <p><strong>Correct Words:</strong> <span id="correct-words">0</span></p>
+            <p><strong>Incorrect Words:</strong> <span id="incorrect-words">0</span></p>
+            <p><strong>WPM:</strong> <span id="final-wpm">0</span></p>
+            <p><strong>Accuracy:</strong> <span id="final-accuracy">0</span>%</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+
+
+    <script src="typingtest.js"></script>
+</body>
+
+</html>
